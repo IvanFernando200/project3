@@ -1,0 +1,42 @@
+.info {
+  background-color: #072226;
+  width: 80%;
+  max-width: 500px;
+  margin-inline: auto;
+  border-radius: 0.5em;
+  padding: 1.5em 2em;
+  margin-bottom: 3em;
+  box-shadow: 3px 4px 1px 0 #000000;
+  font-size: inherit;
+  &:hover {
+    animation: move 0.6s ease-in-out infinite;
+  }
+  .info__name {
+    color: #8fd423;
+    text-align: center;
+    font-weight: 900;
+  }
+  .info__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    .info__item {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 0.3em;
+      .info__label {
+        color: #d9dedf;
+        font-weight: 700;
+      }
+      .info__value {
+        color: #647074;
+      }
+    }
+  }
+}
+@keyframes move {
+  50% {
+    transform: scale(1.05);
+  }
+}

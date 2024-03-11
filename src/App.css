@@ -1,0 +1,25 @@
+.app {
+  background-color: #05292e;
+  /* padding: 1em; */
+  color: #fff;
+}
+.app__poster {
+  position: sticky;
+  margin: 0;
+}
+.container-resident {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .app__poster {
+    height: 8em;
+    .app__img {
+      height: 8em;
+      object-fit: cover;
+      object-position: end;
+    }
+  }
+}
